@@ -1,0 +1,25 @@
+<!-- How to extend from a base file -->
+
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+
+{% block body %}
+<br>
+    <h1>Hello, blogger</h1>
+<br>
+    <main role="main">
+        <div class="jumbotron">
+          <div class="col-sm-8 mx-auto">
+            <h1>Welcome</h1>
+            <p>Welcome to Blog Wall</p>
+            <p>I am a final year CSE student from SRM University. I explore many diffrent technologies like Flutter, Python, Java Spring, TypeScript etc</p>
+            <p>
+              <a class="btn btn-primary" href="/posts" role="button">View Posts &raquo;</a>
+            </p>
+          </div>
+        </div>
+      </main>
+{% endblock %}
